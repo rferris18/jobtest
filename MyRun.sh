@@ -10,7 +10,7 @@ rm index.html
 wget https://raw.githubusercontent.com/puppetlabs/exercise-webpage/master/index.html
 cd /etc/nginx/sites-available/
 # Write to conf so that port is listening to :8080. when this executable is run again the port will change back to 80 so that when the below command is run the port number is not changed to 808080
-sed -i 's/80/8080' default
+sed -i 's/80/8080/' default
 # Restart nginx to pick up changes
 service nginx restart
 
